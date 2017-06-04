@@ -1,0 +1,26 @@
+<p>
+  <strong>Coin:</strong>
+  <%= @mine.coin %>
+</p>
+
+<p>
+  <strong>Miner:</strong>
+  <%= @mine.miner %>
+</p>
+
+<p>
+  <strong>Pool:</strong>
+  <%= @mine.pool %>
+</p>
+
+<p>
+  <strong>Wallet:</strong>
+  <%= @mine.wallet %>
+</p>
+
+<p>
+  <strong>Stratum:</strong>
+  <%= @mine.stratum %>
+</p>
+
+<%= link_to 'Edit', edit_mine_path(@mine) %> | <%= link_to 'Back', mines_path %> | <%= link_to 'Destroy', mine_path(@mine), method: :delete, data: { confirm: 'Are you sure?' } %>

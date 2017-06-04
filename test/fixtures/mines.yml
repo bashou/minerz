@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coin: MyString
+  miner: MyString
+  pool1: MyString
+  pool2: MyString
+  stratum: MyString
+  wallet: MyString
+  flags: MyText
+
+two:
+  coin: MyString
+  miner: MyString
+  pool1: MyString
+  pool2: MyString
+  stratum: MyString
+  wallet: MyString
+  flags: MyText

@@ -1,0 +1,22 @@
+<h1>Listing mines</h1>
+ 
+<table>
+  <tr>
+    <th>Coin</th>
+    <th>Pool</th>
+    <th>Wallet</th>
+  </tr>
+ 
+  <% @mines.each do |mine| %>
+    <tr>
+      <td><%= mine.coin %></td>
+      <td><%= mine.pool %></td>
+      <td><%= mine.wallet %></td>
+      <td><%= link_to 'Show', mine_path(mine) %></td>
+      <td><%= link_to 'Edit', edit_mine_path(mine) %></td>
+      <td><%= link_to 'Destroy', mine_path(mine), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New mine', new_mine_path %>

@@ -1,0 +1,49 @@
+<h1>Edit mine</h1>
+
+<%= form_for :mine, url: mine_path(@mine), method: 'put' do |f| %>
+
+  <% if @mine.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@mine.errors.count, "error") %> prohibited
+        this mine from being saved:
+      </h2>
+      <ul>
+        <% @mine.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :coin %><br>
+    <%= f.text_field :coin %>
+  </p>
+ 
+  <p>
+    <%= f.label :miner %><br>
+    <%= f.text_field :miner %>
+  </p>
+
+  <p>
+    <%= f.label :pool %><br>
+    <%= f.text_field :pool %>
+  </p>
+
+  <p>
+    <%= f.label :stratum %><br>
+    <%= f.text_field :stratum %>
+  </p>
+
+  <p>
+    <%= f.label :wallet %><br>
+    <%= f.text_field :wallet %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', mines_path %>

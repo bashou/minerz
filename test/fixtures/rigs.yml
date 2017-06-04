@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ethos_id: MyString
+  ethos_conf: MyText
+  location: MyString
+  mine: MyString
+
+two:
+  name: MyString
+  ethos_id: MyString
+  ethos_conf: MyText
+  location: MyString
+  mine: MyString
